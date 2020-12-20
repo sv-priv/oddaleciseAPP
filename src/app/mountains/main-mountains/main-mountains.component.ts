@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-main-mountains',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-mountains.component.css']
 })
 export class MainMountainsComponent implements OnInit {
+
+  @Input() mountain
 
   constructor() { }
 

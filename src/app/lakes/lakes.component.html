@@ -1,12 +1,60 @@
 
 <div class="row">
     <div class="col-md-2 col-sm-2 col-lg-2">
-        <app-sidebar-lakes></app-sidebar-lakes>
+        <div class="wrapper">
+            <!-- Sidebar -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h4>Езера</h4>
+                </div>
 
+                <ul class="list-unstyled components">
+
+                    <li>
+                    <h2 (click)="onClickKozjak()">Езеро Козјак</h2>
+                    </li>
+
+                    <li>
+                        <h2 (click)="onClickTikvesh()">Езеро Тиквеш</h2>
+
+                    </li>
+                    <li>
+                        <h2 (click)="onClickLipkovsko()">Липковско Езеро</h2>
+
+                    </li>
+                    <li>
+                        <h2 (click)="onClickOhridsko()">Охридско Езеро</h2>
+                    </li>
+                    <li>
+                        <h2 (click)="onClickPrespansko()">Преспанско Езеро</h2>
+                    </li>
+                    <li>
+                        <h2 (click)="onClickDojransko()">Дојранско Езеро</h2>
+                    </li>
+                    <li>
+                        <h2 (click)="onClickTreska()">Езеро Треска</h2>
+                    </li>
+                    <li>
+                        <h2 (click)="onClickGradec()">Езеро Градец</h2>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+        <script>
+            $(document).ready(function () {
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+
+        });
+        </script>
     </div>
 
     <div class="col-md-10 col-lg-10 col-sm-10">
-        <app-main-lakes></app-main-lakes>
+        <app-main-lakes [lake] = "obj"></app-main-lakes>
     </div>
 
 </div>

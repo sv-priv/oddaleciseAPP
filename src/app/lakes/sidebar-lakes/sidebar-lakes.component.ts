@@ -29,6 +29,7 @@ export class SidebarLakesComponent implements OnInit {
 onClickKozjak(){
    this.http.get('https://oddaleciseapi.herokuapp.com/lakes/Kozjak%20Lake')
    .subscribe(res =>{
+    //  this.title =
     this.obj= res;
   console.log(res);
 
