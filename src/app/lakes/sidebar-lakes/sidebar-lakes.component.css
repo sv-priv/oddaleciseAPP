@@ -87,6 +87,17 @@ a, a:hover, a:focus {
     padding: 10px;
 }
 
+#sidebar ul li h2{
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li h2:hover{
+    color: #6C7A89;
+    background: #fff;
+}
+
 #sidebar ul li a {
     padding: 10px;
     font-size: 1.1em;
@@ -97,11 +108,17 @@ a, a:hover, a:focus {
     background: #fff;
 }
 
+
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
     background: #6C7A89;
 }
 ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+ul ul h2 {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     background: #6d7fcc;
