@@ -30,26 +30,22 @@
      </div>
 
     <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="col-lg-4 col-md-4">
+                <div class="card mb-3 ">
+                  <img class="card-img-top" src={{mountain?.imgUrl}} style="max-height: 500px;" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"> {{ mountain?.subtitle}}</h5>
+                    <p class="card-text">{{ mountain?.description}}</p>
+                    <p class="card-text"><small class="text-muted">  {{ mountain?.category}}</small></p>
+                    <p class="card-text">Висина :  {{ mountain?.height}}</p>
+                    <p class="card-text">Рејтинг :  {{ mountain?.rating}}</p>
+                    <p class="card-text">Број на оценувачи :  {{ mountain?.reviewCount}}</p>
 
-                </div>
-                <div class="col-lg-4 col-md-4">
-                  <div class="card">
-                    <div class="card-header">
-                      Шар Планина
-                    </div>
-                    <div class="card-body">
-                      <blockquote class="blockquote mb-0">
-                        <p>Шар Планина е најубата планина во Македонија</p>
-                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                      </blockquote>
-                    </div>
+
                   </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-
                 </div>
 
     </div>
+
+
 </div>
 
